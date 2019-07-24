@@ -1,0 +1,39 @@
+{
+    "Version": "2019-07-23",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeImages",
+                "ec2:DescribeInstances",
+                "ec2:TerminateInstances",
+                "ec2:StartInstances",
+                "ec2:DescribeAvailabilityZones",
+                "ec2:DescribeTags",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:RunInstances",
+                "ec2:DescribeKeyPairs",
+                "ec2:StopInstances",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeInstanceStatus"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": "logs:CreateLogGroup",
+            "Resource": "arn:aws:logs:*:*:*"
+        }
+    ]
+}
