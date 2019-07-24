@@ -18,7 +18,8 @@ none
 Dependencies
 ------------
 AWS Lambda  
-AWS CloudWatch (to trigger the Lambda functions on a schedule)
+AWS IAM  (Role permissions. You'll need to be able to describe instances and tags and be able to terminate and stop instances)    
+AWS CloudWatch (to trigger the Lambda functions on a schedule)  
 
 Example
 ----------------
