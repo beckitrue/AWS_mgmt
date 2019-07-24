@@ -4,7 +4,7 @@
 
 Repository for my scritpts to manage my AWS infrastructure. It's just a couple of Pyhon scripts I'm running in Lambda right now.
 
-I'm shutting down all spot instances and any on demand instances that don't have a Stag:prod tag. I trigger these with a CloudWatch schedule to run at the end of every day.
+I'm shutting down all spot instances and any on demand instances that don't have a Stage:prod tag. I trigger these with a CloudWatch schedule to run at the end of every day.
 
 Requirements
 ------------    
