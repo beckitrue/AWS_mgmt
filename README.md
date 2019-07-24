@@ -13,6 +13,7 @@ Python 3.7 (that's what I'm using in Lambda - you could probably use an older ve
 
 Site Variables
 --------------
+none
 
 Dependencies
 ------------
