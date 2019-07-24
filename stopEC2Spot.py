@@ -24,5 +24,8 @@ def lambda_handler(event, context):
             print('ID:' + instance['InstanceId'])
 
     # terminate instances
-    ec2.terminate_instances(InstanceIds=spot_instances)
-    print('terminated your instances: ' + str(spot_instances))
+    if not spot_instances:
+        print('there are no running spot instances')
+    else:
+        ec2.terminate_instances(InstanceIds=spot_instances)
+        print('terminated your instances: ' + str(spot_instances))

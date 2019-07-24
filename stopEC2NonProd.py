@@ -56,5 +56,8 @@ def lambda_handler(event, context):
                 stop_instances.append(instance['InstanceId'])
                 print(instance['InstanceId'] + " added to stop list")
     # stop non-prod instances
-    ec2.stop_instances(InstanceIds=stop_instances)
-    print('stopped your instances: ' + str(stop_instances))
+    if not stop_instances:
+        print('there are no running non-prod instances')
+    else:
+        ec2.stop_instances(InstanceIds=stop_instances)
+        print('stopped your instances: ' + str(stop_instances))
