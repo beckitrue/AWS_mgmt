@@ -55,6 +55,7 @@ def lambda_handler(event, context):
             if instance['InstanceId'] not in prod_instance_ids:
                 stop_instances.append(instance['InstanceId'])
                 print(instance['InstanceId'] + " added to stop list")
+
     # stop non-prod instances
     if not stop_instances:
         print('there are no running non-prod instances')
