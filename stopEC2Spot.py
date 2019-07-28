@@ -1,4 +1,4 @@
-iimport boto3
+import boto3
 region = 'us-west-2'
 
 # find spot instances
